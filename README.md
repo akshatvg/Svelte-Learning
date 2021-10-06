@@ -1,70 +1,70 @@
-# Svelte-Learning
+# Getting Started with Create React App
 
-Learning Svelte and testing its features.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Making a web component
+## Available Scripts
 
-Add `customElement: true` in the `rollup.config.js` file under the plugins under svelte.
+In the project directory, you can run:
 
-## Reactivity
+### `yarn start`
 
-- Props passed into Svelte component (web-element) should be reactive:  Just put a custom prop like `count=“30”` and it will begin with 30 even in React. Eg: https://github.com/akshatvg/Svelte-Learning/blob/master/first-project/src/App.svelte
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Web Element
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-- Almost everything works with web component if `customElement: true` is set on `plugins` for `svelte`.
-- Export to Web Element (In React just put the build file in public folder and access it through the `index.html` file.
+### `yarn test`
 
-## Callbacks
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- https://svelte.dev/tutorial/component-events)
-- **HTML:** Svelte function & internally during svelte life cycle invoke function: https://svelte.dev/tutorial/event-forwarding 
-- `<react-ui-kit callbacks={endCall:{()=>console.log}} />`
+### `yarn build`
 
-## Data Store
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Data Store outside Svelte (Redux type): https://svelte.dev/tutorial/writable-stores takes care of all these options. 
-- All we need to do is something like this: https://stackoverflow.com/questions/67663671/understanding-context-in-svelte-convert-from-react-context).
-- Find a way to access Svelte/store outside Svelte (works with a normal exported Web Component).
-- Context access possible.
-- Svelte store limitation in terms of complex data / video data.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Web Elements inside each other
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- Compose three web elements together (theoretically possible). Eg:
+### `yarn eject`
 
-```html
-<a> 
-    <b>
-        <c></c>
-    </b>
-</a>
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## TypeScript
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- https://svelte.dev/blog/svelte-and-typescript)
-- `node scripts/setupTypeScript.js`
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Resources
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- https://www.youtube.com/watch?v=RbTM785zhG4&t=3s
-- https://svelte.dev/repl/ff94ad9fbb18495099f2e6e31b86bc9e?version=3.9.2
-- https://developers.google.com/web/fundamentals/web-components/customelements
+## Learn More
 
-## How to test with a React App
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- `npm run build`
+To learn React, check out the [React documentation](https://reactjs.org/).
 
--
+### Code Splitting
 
-```bash
-npx create-react-app test
-cd test
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Copy the build files from the public folder in the Svelte app and paste them onto the public folder of the React app.
+### Analyzing the Bundle Size
 
-- Import the pasted files in the `index.html` file of the React app.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- Simply import the web component exported before like `<Svelte-Component></Svelte-Component>`.
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
