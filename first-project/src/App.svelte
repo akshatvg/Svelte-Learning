@@ -11,6 +11,15 @@
 	onMount(() => {
 		console.log("Mounted");
 	});
+
+	$: if (count >= 5) {
+		// alert(`count is dangerously high!${count}`,);
+		// count = 9;
+		console.log(customFunction);
+		customFunction();
+	}
+
+	export let customFunction;
 </script>
 
 <main>
